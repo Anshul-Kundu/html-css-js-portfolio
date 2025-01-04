@@ -328,7 +328,7 @@ section {
 
 /*exp*/
 
-#experience {
+/* #experience {
   position: relative;
 }
 
@@ -363,6 +363,80 @@ article {
 
 article .icon {
   cursor: default;
+} */
+
+/* Common box styling for all articles */
+
+.details-container .article-container article {
+  display: flex;
+  flex-direction: column; /* Stack the text vertically */
+  align-items: flex-start; /* Align content to the left */
+  gap: 0.5rem; /* Add space between title and description */
+  background-color: #f9f9f9; /* Light background for the box */
+  padding: 0.75rem 1rem; /* Add padding for spacing inside */
+  border-radius: 5px; /* Optional: Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add slight shadow */
+  width: 10rem; /* Ensure consistent box width */
+}
+
+.details-container .article-container article h3 {
+  margin: 0; /* Remove margin for uniformity */
+  font-weight: bold; /* Make titles stand out */
+}
+
+.details-container .article-container article p {
+  margin: 0; /* Remove margin */
+  font-size: 0.9rem; /* Adjust font size if needed */
+  color: #555; /* Optional: Lighter text color */
+}
+
+.details-container .article-container article .icon {
+  width: 1.5rem; /* Optional: Set a fixed size for icons */
+  height: 1.5rem;
+  margin-bottom: 0.5rem; /* Add spacing below the icon */
+}
+
+/*for third column*/
+/* Third column specific styling */
+.details-container.exp {
+  text-align: left; /* Align text to the left */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: flex-start; /* Align items to the top */
+  gap: 1rem; /* Add space between items */
+  padding: 1rem; /* Add padding for spacing inside the container */
+}
+
+.details-container.exp h2 {
+  margin-bottom: 1rem; /* Add space below the column title */
+}
+
+.details-container.exp .article-container {
+  display: flex;
+  flex-direction: column; /* Stack articles vertically */
+  gap: 1.5rem; /* Add space between articles */
+}
+
+.details-container.exp article {
+  display: flex;
+  flex-direction: column; /* Stack content inside articles vertically */
+  align-items: flex-start; /* Align all content to the left */
+  gap: 0.5rem; /* Add spacing between elements in each article */
+  background-color: #f9f9f9; /* Optional: Background for better visibility */
+  padding: 0.75rem 1rem; /* Add padding inside articles */
+  border-radius: 5px; /* Optional: Rounded corners for a cleaner look */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add slight shadow */
+}
+
+.details-container.exp article h4 {
+  margin: 0; /* Remove extra margin */
+  font-weight: bold; /* Make section titles stand out */
+}
+
+.details-container.exp article p {
+  margin: 0; /* Remove extra margin for uniformity */
+  font-size: 0.9rem; /* Adjust font size if needed */
+  color: #555; /* Optional: Lighter text color */
 }
 
 /*projects sec*/
