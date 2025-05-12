@@ -358,6 +358,22 @@ section {
   padding: 1rem; /* Add padding for spacing inside the container */
 }
 
+.exp-points {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; /* This ensures responsiveness on smaller screens */
+}
+
+.exp-points .point {
+  flex: 1 1 45%;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
 .details-container.exp h2 {
   margin-bottom: 1rem; /* Add space below the column title */
 }
